@@ -1,0 +1,2 @@
+#!/bin/bash
+printf "%s\n" ./ ../ $(ls -1A | grep -E '^[0-9A-Za-z]' | sort -k1.1d,1.2n -k1.3 | sed 's/$/\//') | tr -d '\n' && echo
